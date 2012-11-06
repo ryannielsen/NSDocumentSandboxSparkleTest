@@ -6,6 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		949AADA8164868D8005C0A07 /* Prepare Appcast */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 949AADA9164868D8005C0A07 /* Build configuration list for PBXAggregateTarget "Prepare Appcast" */;
+			buildPhases = (
+				949AADAE164868EF005C0A07 /* Zip app */,
+				949AADAF16486909005C0A07 /* Prepare Appcast */,
+				949AADB016486915005C0A07 /* Copy to Desktop if $CURRENT_PROJECT_VERSION > 1 */,
+			);
+			dependencies = (
+				949AADAD164868E6005C0A07 /* PBXTargetDependency */,
+			);
+			name = "Prepare Appcast";
+			productName = "Prepare Appcast";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9466E9F616485AAC0002F638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466E9F516485AAC0002F638 /* Cocoa.framework */; };
 		9466EA0016485AAC0002F638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9466E9FE16485AAC0002F638 /* InfoPlist.strings */; };
@@ -14,7 +31,102 @@
 		9466EA0916485AAC0002F638 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 9466EA0816485AAC0002F638 /* Document.m */; };
 		9466EA0C16485AAC0002F638 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9466EA0A16485AAC0002F638 /* Document.xib */; };
 		9466EA0F16485AAC0002F638 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9466EA0D16485AAC0002F638 /* MainMenu.xib */; };
+		949AADA216486748005C0A07 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 949AAD9F16486748005C0A07 /* dsa_pub.pem */; };
+		949AADA316486881005C0A07 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949AAD8B164866B2005C0A07 /* Sparkle.framework */; };
+		949AADA51648688A005C0A07 /* Sparkle.framework in Copy Sparkle */ = {isa = PBXBuildFile; fileRef = 949AAD8B164866B2005C0A07 /* Sparkle.framework */; };
+		949AADA7164868AD005C0A07 /* com.andymatuschak.Sparkle.SandboxService.xpc in Copy com.andymatuschak.Sparkle.SandboxService.xpc */ = {isa = PBXBuildFile; fileRef = 949AAD95164866B2005C0A07 /* com.andymatuschak.Sparkle.SandboxService.xpc */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		949AAD8A164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Sparkle;
+		};
+		949AAD8C164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61B5F90209C4CEE200B25A18;
+			remoteInfo = "Sparkle Test App";
+		};
+		949AAD8E164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612279D90DB5470200AB99EA;
+			remoteInfo = "Sparkle Unit Tests";
+		};
+		949AAD90164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D06E8D00FD68C7C005AE3F6;
+			remoteInfo = BinaryDelta;
+		};
+		949AAD92164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C14BB7136EEF1500649790;
+			remoteInfo = finish_installation;
+		};
+		949AAD94164866B2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B887B5E1517F3AB000BB292;
+			remoteInfo = sandbox_service;
+		};
+		949AAD97164866C2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Sparkle;
+		};
+		949AAD99164866C2005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B887B5D1517F3AB000BB292;
+			remoteInfo = sandbox_service;
+		};
+		949AADAC164868E6005C0A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9466E9E816485AAC0002F638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9466E9F016485AAC0002F638;
+			remoteInfo = NSDocumentSandboxSparkleTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		949AADA416486885005C0A07 /* Copy Sparkle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				949AADA51648688A005C0A07 /* Sparkle.framework in Copy Sparkle */,
+			);
+			name = "Copy Sparkle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949AADA61648688E005C0A07 /* Copy com.andymatuschak.Sparkle.SandboxService.xpc */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				949AADA7164868AD005C0A07 /* com.andymatuschak.Sparkle.SandboxService.xpc in Copy com.andymatuschak.Sparkle.SandboxService.xpc */,
+			);
+			name = "Copy com.andymatuschak.Sparkle.SandboxService.xpc";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9466E9F116485AAC0002F638 /* NSDocumentSandboxSparkleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSDocumentSandboxSparkleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +143,11 @@
 		9466EA0816485AAC0002F638 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		9466EA0B16485AAC0002F638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
 		9466EA0E16485AAC0002F638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
+		949AAD9C164866EB005C0A07 /* NSDocumentSandboxSparkleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NSDocumentSandboxSparkleTest.entitlements; sourceTree = "<group>"; };
+		949AAD9D16486748005C0A07 /* appcast.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
+		949AAD9E16486748005C0A07 /* dsa_priv.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
+		949AAD9F16486748005C0A07 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9466E9F616485AAC0002F638 /* Cocoa.framework in Frameworks */,
+				949AADA316486881005C0A07 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +169,7 @@
 				9466E9FB16485AAC0002F638 /* NSDocumentSandboxSparkleTest */,
 				9466E9F416485AAC0002F638 /* Frameworks */,
 				9466E9F216485AAC0002F638 /* Products */,
+				949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +203,7 @@
 		9466E9FB16485AAC0002F638 /* NSDocumentSandboxSparkleTest */ = {
 			isa = PBXGroup;
 			children = (
+				949AAD9C164866EB005C0A07 /* NSDocumentSandboxSparkleTest.entitlements */,
 				9466EA0716485AAC0002F638 /* Document.h */,
 				9466EA0816485AAC0002F638 /* Document.m */,
 				9466EA0A16485AAC0002F638 /* Document.xib */,
@@ -96,6 +216,9 @@
 		9466E9FC16485AAC0002F638 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				949AAD9D16486748005C0A07 /* appcast.xml */,
+				949AAD9E16486748005C0A07 /* dsa_priv.pem */,
+				949AAD9F16486748005C0A07 /* dsa_pub.pem */,
 				9466E9FD16485AAC0002F638 /* NSDocumentSandboxSparkleTest-Info.plist */,
 				9466E9FE16485AAC0002F638 /* InfoPlist.strings */,
 				9466EA0116485AAC0002F638 /* main.m */,
@@ -103,6 +226,19 @@
 				9466EA0416485AAC0002F638 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949AAD7C164866B2005C0A07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949AAD8B164866B2005C0A07 /* Sparkle.framework */,
+				949AAD8D164866B2005C0A07 /* Sparkle Test App.app */,
+				949AAD8F164866B2005C0A07 /* Sparkle Unit Tests.octest */,
+				949AAD91164866B2005C0A07 /* BinaryDelta */,
+				949AAD93164866B2005C0A07 /* finish_installation.app */,
+				949AAD95164866B2005C0A07 /* com.andymatuschak.Sparkle.SandboxService.xpc */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,10 +251,14 @@
 				9466E9ED16485AAC0002F638 /* Sources */,
 				9466E9EE16485AAC0002F638 /* Frameworks */,
 				9466E9EF16485AAC0002F638 /* Resources */,
+				949AADA416486885005C0A07 /* Copy Sparkle */,
+				949AADA61648688E005C0A07 /* Copy com.andymatuschak.Sparkle.SandboxService.xpc */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				949AAD98164866C2005C0A07 /* PBXTargetDependency */,
+				949AAD9A164866C2005C0A07 /* PBXTargetDependency */,
 			);
 			name = NSDocumentSandboxSparkleTest;
 			productName = NSDocumentSandboxSparkleTest;
@@ -144,12 +284,64 @@
 			mainGroup = 9466E9E616485AAC0002F638;
 			productRefGroup = 9466E9F216485AAC0002F638 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 949AAD7C164866B2005C0A07 /* Products */;
+					ProjectRef = 949AAD7B164866B2005C0A07 /* Sparkle.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9466E9F016485AAC0002F638 /* NSDocumentSandboxSparkleTest */,
+				949AADA8164868D8005C0A07 /* Prepare Appcast */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		949AAD8B164866B2005C0A07 /* Sparkle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sparkle.framework;
+			remoteRef = 949AAD8A164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		949AAD8D164866B2005C0A07 /* Sparkle Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Sparkle Test App.app";
+			remoteRef = 949AAD8C164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		949AAD8F164866B2005C0A07 /* Sparkle Unit Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Sparkle Unit Tests.octest";
+			remoteRef = 949AAD8E164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		949AAD91164866B2005C0A07 /* BinaryDelta */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = BinaryDelta;
+			remoteRef = 949AAD90164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		949AAD93164866B2005C0A07 /* finish_installation.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = finish_installation.app;
+			remoteRef = 949AAD92164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		949AAD95164866B2005C0A07 /* com.andymatuschak.Sparkle.SandboxService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = com.andymatuschak.Sparkle.SandboxService.xpc;
+			remoteRef = 949AAD94164866B2005C0A07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9466E9EF16485AAC0002F638 /* Resources */ = {
@@ -160,10 +352,59 @@
 				9466EA0616485AAC0002F638 /* Credits.rtf in Resources */,
 				9466EA0C16485AAC0002F638 /* Document.xib in Resources */,
 				9466EA0F16485AAC0002F638 /* MainMenu.xib in Resources */,
+				949AADA216486748005C0A07 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		949AADAE164868EF005C0A07 /* Zip app */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Zip app";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd \"$BUILT_PRODUCTS_DIR\"\nzip -r --symlinks --quiet NSDocumentSandboxSparkleTest.app.zip NSDocumentSandboxSparkleTest.app\npopd";
+			showEnvVarsInLog = 0;
+		};
+		949AADAF16486909005C0A07 /* Prepare Appcast */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Appcast";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DATE=`date`\nSIGNATURE=`\"$SRCROOT\"/Sparkle/sign_update.rb \"$BUILT_PRODUCTS_DIR\"/NSDocumentSandboxSparkleTest.app.zip \"$SRCROOT\"/NSDocumentSandboxSparkleTest/dsa_priv.pem`\nLENGTH=`du -k  \"$BUILT_PRODUCTS_DIR\"/NSDocumentSandboxSparkleTest.app.zip | awk '{print $1*1024}'`\n\nditto \"$SRCROOT\"/NSDocumentSandboxSparkleTest/appcast.xml \"$BUILT_PRODUCTS_DIR\"/appcast.xml\n\necho \"Current project version: $CURRENT_PROJECT_VERSION\"\n\nsed -i '' \"s|SPARKLE_BASE_URL|$SPARKLE_BASE_URL|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml\nsed -i '' \"s|SPARKLE_UPDATE_PATH|$SPARKLE_UPDATE_PATH|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml\nsed -i '' \"s|DATE|$DATE|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml\nsed -i '' \"s|CURRENT_PROJECT_VERSION|$CURRENT_PROJECT_VERSION|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml\nsed -i '' \"s|SPARKLE_APP_SIGNATURE|$SIGNATURE|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml\nsed -i '' \"s|SPARKLE_APP_LENGTH|$LENGTH|g\" \"$BUILT_PRODUCTS_DIR\"/appcast.xml";
+			showEnvVarsInLog = 0;
+		};
+		949AADB016486915005C0A07 /* Copy to Desktop if $CURRENT_PROJECT_VERSION > 1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy to Desktop if $CURRENT_PROJECT_VERSION > 1";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CURRENT_PROJECT_VERSION -gt 1 ]\nthen\necho \"Copying\"\nditto \"$BUILT_PRODUCTS_DIR\"/NSDocumentSandboxSparkleTest.app.zip \"$HOME\"/Desktop/Appcast/NSDocumentSandboxSparkleTest.app.zip\nditto \"$BUILT_PRODUCTS_DIR\"/appcast.xml \"$HOME\"/Desktop/Appcast/appcast.xml\nelse\necho \"Not copying!\"\nfi";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9466E9ED16485AAC0002F638 /* Sources */ = {
@@ -176,6 +417,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		949AAD98164866C2005C0A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sparkle;
+			targetProxy = 949AAD97164866C2005C0A07 /* PBXContainerItemProxy */;
+		};
+		949AAD9A164866C2005C0A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sandbox_service;
+			targetProxy = 949AAD99164866C2005C0A07 /* PBXContainerItemProxy */;
+		};
+		949AADAD164868E6005C0A07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9466E9F016485AAC0002F638 /* NSDocumentSandboxSparkleTest */;
+			targetProxy = 949AADAC164868E6005C0A07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9466E9FE16485AAC0002F638 /* InfoPlist.strings */ = {
@@ -223,7 +482,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -239,7 +501,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
+				SPARKLE_BASE_URL = "http://localhost:3000";
+				SPARKLE_UPDATE_PATH = "$(SPARKLE_BASE_URL)/NSDocumentSandboxSparkleTest.app.zip";
 			};
 			name = Debug;
 		};
@@ -253,7 +518,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -262,13 +530,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
+				SPARKLE_BASE_URL = "http://localhost:3000";
+				SPARKLE_UPDATE_PATH = "$(SPARKLE_BASE_URL)/NSDocumentSandboxSparkleTest.app.zip";
 			};
 			name = Release;
 		};
 		9466EA1316485AAC0002F638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NSDocumentSandboxSparkleTest/NSDocumentSandboxSparkleTest.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDocumentSandboxSparkleTest/NSDocumentSandboxSparkleTest-Prefix.pch";
@@ -281,12 +553,29 @@
 		9466EA1416485AAC0002F638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NSDocumentSandboxSparkleTest/NSDocumentSandboxSparkleTest.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSDocumentSandboxSparkleTest/NSDocumentSandboxSparkleTest-Prefix.pch";
 				INFOPLIST_FILE = "NSDocumentSandboxSparkleTest/NSDocumentSandboxSparkleTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		949AADAA164868D8005C0A07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		949AADAB164868D8005C0A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -309,6 +598,16 @@
 				9466EA1416485AAC0002F638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949AADA9164868D8005C0A07 /* Build configuration list for PBXAggregateTarget "Prepare Appcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949AADAA164868D8005C0A07 /* Debug */,
+				949AADAB164868D8005C0A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
+	<channel>
+		<title>Sandbox Sparkle Test</title>
+		<link>SPARKLE_BASE_URL</link>
+		<description>Testing Sandbox vs. Sparkle</description>
+		<language>en</language>
+		<item>
+			<title>Sandbox Sparkle Test</title>
+			<description><![CDATA[<!DOCTYPE html><html><head><title>Sandbox Sparkle Test</title></head><body>Test test test.</body></html>]]></description>
+			<pubDate>DATE</pubDate>
+			<enclosure url="SPARKLE_UPDATE_PATH" sparkle:version="CURRENT_PROJECT_VERSION" sparkle:dsaSignature="SPARKLE_APP_SIGNATURE" length="SPARKLE_APP_LENGTH" type="application/octet-stream" />
+		</item>
+	</channel> 
+</rss>
+	
